@@ -1,7 +1,12 @@
 import { Injectable } from '@nestjs/common';
 
-@Injectable({})
+@Injectable()
 export class AuthService {
-  // This service will handle authentication logic
-  // You can add methods here for login, registration, etc.
+  login() {
+    return { message: 'User logged in successfully' };
+  }
+
+  signup() {
+    return { message: 'User signed up successfully' };
+  }
 }
